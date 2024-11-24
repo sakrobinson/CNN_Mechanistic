@@ -31,3 +31,7 @@ plt.xlabel('Predicted')
 plt.ylabel('True')
 plt.title('Confusion Matrix')
 plt.show()
+
+print("Cross-validation accuracies:", cvscores)
+print("Mean accuracy: {:.2f}% (+/- {:.2f}%)".format(np.mean(cvscores), np.std(cvscores)))
+
